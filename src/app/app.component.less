@@ -1,0 +1,24 @@
+@import './app.global.less';
+@import './app.theme.less';
+
+.app-container {
+  float: right;
+  // width: calc(100% - 200px);
+  height: 100%;
+  position: relative;
+
+  @topbar-height: 90px;
+  .topbar {
+    width: 100%;
+    height: @topbar-height;
+    background-color: #FFF;
+    border-bottom: 1px solid @grey;
+  }
+
+  @content-padding: 30px;
+  .content {
+    padding: @content-padding;
+    width: calc(100% - @content-padding * 2);
+    height: calc(100% - @content-padding * 2 - @topbar-height - 1px);
+  }
+}

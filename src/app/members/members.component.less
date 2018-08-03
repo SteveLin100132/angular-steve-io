@@ -1,0 +1,40 @@
+@import '../app.global.less';
+@import '../app.theme.less';
+
+.members-panel {
+  width: 100%;
+
+  ul {
+    padding-left: 0;
+    margin-top: 40px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+
+    li {
+      width: calc(100% - 80px);
+      height: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
+      text-align: left;
+      position: relative;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      word-wrap: break-word;
+      display: inline-block;
+      vertical-align: top;
+      border: 1px solid @grey;
+      .transition-duration(200ms);
+
+      &:hover {
+        color: #FFF;
+        background-color: #000;
+      }
+
+      h3 {
+        margin: 0;
+        line-height: 70px;
+      }
+    }
+  }
+}

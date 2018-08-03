@@ -1,0 +1,7 @@
+<div class="members-panel">
+  <ul>
+    <li *ngFor="let member of members" class="member-card" (click)="selectMember(member)">
+      <h3>{{ member.name }}</h3>
+    </li>
+  </ul>
+</div>
